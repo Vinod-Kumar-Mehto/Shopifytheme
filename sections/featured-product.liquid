@@ -699,8 +699,7 @@
   });
 </script>
 
-{%- assign current_variant = product.selected_or_first_available_variant -%}
-<span>{{ current_variant.sku }}</span>
+
 {% if product.media.size > 0 %}
   <script src="{{ 'product-modal.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
