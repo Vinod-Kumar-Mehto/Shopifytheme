@@ -283,7 +283,7 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-      {% unless template == "collection" %}
+      {% unless product.title == "Long shirt" %}
     {% sections 'footer-group' %}
         {% endunless %}
        
