@@ -283,8 +283,9 @@
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-        {{ template }}
+      {% unless template == "collection" %}
     {% sections 'footer-group' %}
+        {% endunless %}
        
 
     <ul hidden>
